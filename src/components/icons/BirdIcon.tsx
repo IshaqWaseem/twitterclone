@@ -1,6 +1,6 @@
 export const BirdIcon = () => (
   <svg
-    width="64px"
+    width="48px"
     viewBox="0 0 64 64"
     xmlns="http://www.w3.org/2000/svg"
     aria-hidden="true"

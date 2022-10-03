@@ -1,30 +1,25 @@
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import "./App.css";
+import Tweet from "./components/Tweet";
+
 function App() {
   return (
     <>
       <Container>
         <Row>
-          <Col xs={1}>
+          <Col xs={3} md={2}>
             <Navbar />
           </Col>
-          <Col xs={6}>
-            <Router>
-              <Switch>
-                <Route path="/profile">
-                  <Profile />
-                </Route>
-                <Route path="/">
-                  <Home />
-                </Route>
-              </Switch>
-            </Router>
+          <Col xs={10} md={6}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/profile" element={<Profile />} />
+            </Routes>
           </Col>
-          <Col xs={2}></Col>
         </Row>
       </Container>
     </>

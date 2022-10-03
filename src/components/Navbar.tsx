@@ -1,20 +1,45 @@
+import { Link } from "react-router-dom";
 import BirdIcon from "./icons/BirdIcon";
 import HashtagIcon from "./icons/HashtagIcon";
+import BellIcon from "./icons/BellIcon";
+import MailIcon from "./icons/MailIcon";
+import BookmarkIcon from "./icons/BookmarkIcon";
+import ListIcon from "./icons/ListIcon";
+import ProfileIcon from "./icons/ProfileIcon";
+import MoreIcon from "./icons/MoreIcon";
 
 import { Button, Container, Nav, Navbar as NavBoot } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import HomeIcon from "./icons/HomeIcon";
 const Navbar = () => {
   return (
-    <Nav className="bg-white shadow-sm mb-3 flex-column">
-      <Nav.Link to="/" as={NavLink}>
+    <Nav className="bg-white flex-column align-items-center ps-50px">
+      <Link to="/">
         <BirdIcon />
-      </Nav.Link>
-      <Nav.Link to="/" as={NavLink}>
+      </Link>
+      <Link to="/">
+        <HomeIcon />
+      </Link>
+      <Link to="/">
         <HashtagIcon />
-      </Nav.Link>
-      <Nav.Link to="/" as={NavLink}>
-        <BirdIcon />
-      </Nav.Link>
+      </Link>
+      <Link to="/">
+        <BellIcon />
+      </Link>
+      <Link to="/">
+        <MailIcon />
+      </Link>
+      <Link to="/">
+        <BookmarkIcon />
+      </Link>
+      <Link to="/">
+        <ListIcon />
+      </Link>
+      <Link to="/">
+        <ProfileIcon />
+      </Link>
+      <Link to="/">
+        <MoreIcon />
+      </Link>
     </Nav>
   );
 };
