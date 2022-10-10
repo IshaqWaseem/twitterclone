@@ -22,7 +22,9 @@ const Navbar = () => {
   return (
     <Col>
       <Nav className="bg-white flex-column align-items-center ps-50px"></Nav>
-      <Options Icon={MoreIcon} Text="lol"></Options>
+      <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+        <Options Icon={MoreIcon} Text="lol"></Options>
+      </Link>
     </Col>
   );
 };

@@ -7,7 +7,7 @@ export default function Options({ Icon, Text }: NavOptions) {
   return (
     <>
       <Icon />
-      {Text}
+      <span style={{ paddingLeft: 13 }}>{Text}</span>
     </>
   );
 }
