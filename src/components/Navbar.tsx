@@ -7,40 +7,50 @@ import BookmarkIcon from "./icons/BookmarkIcon";
 import ListIcon from "./icons/ListIcon";
 import ProfileIcon from "./icons/ProfileIcon";
 import MoreIcon from "./icons/MoreIcon";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-import { Button, Container, Nav, Navbar as NavBoot } from "react-bootstrap";
+import {
+  Button,
+  Col,
+  Container,
+  Nav,
+  Navbar as NavBoot,
+} from "react-bootstrap";
 import HomeIcon from "./icons/HomeIcon";
 const Navbar = () => {
   return (
-    <Nav className="bg-white flex-column align-items-center ps-50px">
-      <Link to="/">
-        <BirdIcon />
-      </Link>
-      <Link to="/">
-        <HomeIcon />
-      </Link>
-      <Link to="/">
-        <HashtagIcon />
-      </Link>
-      <Link to="/">
-        <BellIcon />
-      </Link>
-      <Link to="/">
-        <MailIcon />
-      </Link>
-      <Link to="/">
-        <BookmarkIcon />
-      </Link>
-      <Link to="/">
-        <ListIcon />
-      </Link>
-      <Link to="/">
-        <ProfileIcon />
-      </Link>
-      <Link to="/">
-        <MoreIcon />
-      </Link>
-    </Nav>
+    <Col>
+      <Nav className="bg-white flex-column align-items-center ps-50px">
+        <Link to="/">
+          <BirdIcon />
+        </Link>
+        <Link to="/">
+          <HomeIcon />
+          <span className="link-danger">test</span>
+        </Link>
+        <Link to="/">
+          <HashtagIcon />
+        </Link>
+        <Link to="/">
+          <BellIcon />
+        </Link>
+        <Link to="/">
+          <MailIcon />
+        </Link>
+        <Link to="/">
+          <BookmarkIcon />
+        </Link>
+        <Link to="/">
+          <ListIcon />
+        </Link>
+        <Link to="/">
+          <ProfileIcon />
+        </Link>
+        <Link to="/">
+          <MoreIcon />
+        </Link>
+      </Nav>
+    </Col>
   );
 };
 

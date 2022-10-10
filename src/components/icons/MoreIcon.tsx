@@ -3,8 +3,8 @@ export const MoreIcon = () => (
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
     preserveAspectRatio="xMidYMid"
-    width="47.974"
-    height="47.974"
+    width="40"
+    height="40"
     viewBox="0 0 512 512"
   >
     <image
