@@ -1,7 +1,13 @@
 import React, { ReactComponentElement } from "react";
 type NavOptions = {
-  Icon: any;
+  Icon: () => JSX.Element;
+  Text: string;
 };
-export default function Options({ Icon }: NavOptions) {
-  return <Icon />;
+export default function Options({ Icon, Text }: NavOptions) {
+  return (
+    <>
+      <Icon />
+      {Text}
+    </>
+  );
 }
