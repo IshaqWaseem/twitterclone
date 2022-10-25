@@ -1,0 +1,11 @@
+a {
+    padding: 0.25rem 1rem;
+}
+a:hover {
+
+    background-color: rgb(180, 180, 180);
+    border-radius:3rem;
+  }
+.Nav {
+    background-color: black;
+}
